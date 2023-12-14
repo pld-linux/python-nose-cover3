@@ -1,0 +1,11 @@
+--- nose-cover3-0.1.0/setup.py.orig	2011-09-13 16:21:12.000000000 +0200
++++ nose-cover3-0.1.0/setup.py	2023-12-11 21:32:58.603569792 +0100
+@@ -15,8 +15,6 @@ from distutils.command.install import IN
+ import sys
+ 
+ extra = {}
+-if sys.version_info >= (3, 0):
+-    extra.update(use_2to3=True)
+ 
+ packages, data_files = [], []
+ root_dir = os.path.dirname(__file__)
