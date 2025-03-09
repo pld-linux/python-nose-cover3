@@ -52,7 +52,7 @@ Obsługa Coverage 3.x dla Nose.
 
 %prep
 %setup -q -n nose-cover3-%{version}
-%patch0 -p1
+%patch -P 0 -p1
 
 %build
 %if %{with python2}
