@@ -7,7 +7,7 @@ Summary:	Coverage 3.x support for Nose
 Summary(pl.UTF-8):	Obsługa Coverage 3.x dla Nose
 Name:		python-nose-cover3
 Version:	0.1.0
-Release:	2
+Release:	3
 License:	LGPL v2.1
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/nose-cover3/
