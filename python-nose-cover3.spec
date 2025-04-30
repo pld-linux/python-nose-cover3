@@ -7,7 +7,7 @@ Summary:	Coverage 3.x support for Nose
 Summary(pl.UTF-8):	Obsługa Coverage 3.x dla Nose
 Name:		python-nose-cover3
 Version:	0.1.0
-Release:	3
+Release:	4
 License:	LGPL v2.1
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/nose-cover3/
@@ -20,7 +20,7 @@ BuildRequires:	python-modules >= 1:2.5
 BuildRequires:	python-setuptools
 %endif
 %if %{with python3}
-BuildRequires:	python3-2to3
+BuildRequires:	python3-fissix
 BuildRequires:	python3-modules >= 1:3.2
 BuildRequires:	python3-setuptools
 %endif
@@ -61,7 +61,7 @@ Obsługa Coverage 3.x dla Nose.
 
 %if %{with python3}
 # setuptools no longer support use_2to3, do it manually
-2to3-%{py3_ver} -n -w -o build-3/lib/nosecover3 nosecover3
+%{__python3} -m fissix -n -w -o build-3/lib/nosecover3 nosecover3
 %endif
 
 %install
